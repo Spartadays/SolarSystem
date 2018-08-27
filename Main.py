@@ -23,23 +23,23 @@ scene.autoscale = False
 scene.lights = []
 
 # SOLAR SYSTEM OBJECTS:
-sun = Star(1392000, 27 * 24, 'sunmap.jpg', 0, time_scale, REFRESH_RATE, SUN_SCALE)
-mercury = Planet(4879, 57910000, 58.65 * 24, 87.969, 'mercurymap.jpg', 0, sun, PLANET_SCALE, DISTANCE_SCALE, time_scale,
+sun = Star(1392000, 27 * 24, 'textures/sunmap.jpg', 0, time_scale, REFRESH_RATE, SUN_SCALE)
+mercury = Planet(4879, 57910000, 58.65 * 24, 87.969, 'textures/mercurymap.jpg', 0, sun, PLANET_SCALE, DISTANCE_SCALE, time_scale,
                  REFRESH_RATE)
-venus = Planet(12100, 108200000, 243 * 24, 224.7, 'venusmap.jpg', 0, sun, PLANET_SCALE, DISTANCE_SCALE, time_scale,
+venus = Planet(12100, 108200000, 243 * 24, 224.7, 'textures/venusmap.jpg', 0, sun, PLANET_SCALE, DISTANCE_SCALE, time_scale,
                REFRESH_RATE)
-earth = Planet(12740, 149600000, 23.93, 365.25, 'earthmap1k.jpg', 0, sun, PLANET_SCALE, DISTANCE_SCALE, time_scale,
+earth = Planet(12740, 149600000, 23.93, 365.25, 'textures/earthmap1k.jpg', 0, sun, PLANET_SCALE, DISTANCE_SCALE, time_scale,
                REFRESH_RATE)
-moon = Satellite(3476, 380000, 27.3 * 24, 27.3, 'moonmap4k.jpg', 0, earth)
-mars = Planet(6779, 227900000, 24.62, 686.738, 'mars_1k_color.jpg', 0, sun, PLANET_SCALE, DISTANCE_SCALE, time_scale,
+moon = Satellite(3476, 380000, 27.3 * 24, 27.3, 'textures/moonmap4k.jpg', 0, earth)
+mars = Planet(6779, 227900000, 24.62, 686.738, 'textures/mars_1k_color.jpg', 0, sun, PLANET_SCALE, DISTANCE_SCALE, time_scale,
               REFRESH_RATE)
-jupiter = Planet(139800, 778600000, 9.8, 11 * 365.25 + 315, 'jupitermap.jpg', 0, sun, PLANET_SCALE, DISTANCE_SCALE,
+jupiter = Planet(139800, 778600000, 9.8, 11 * 365.25 + 315, 'textures/jupitermap.jpg', 0, sun, PLANET_SCALE, DISTANCE_SCALE,
                  time_scale, REFRESH_RATE)
-saturn = Planet(116500, 1433000000, 10.23, 29 * 365.25 + 167, 'saturnmap.jpg', 0, sun, PLANET_SCALE, DISTANCE_SCALE,
+saturn = Planet(116500, 1433000000, 10.23, 29 * 365.25 + 167, 'textures/saturnmap.jpg', 0, sun, PLANET_SCALE, DISTANCE_SCALE,
                 time_scale, REFRESH_RATE)
-uranus = Planet(50720, 2877000000, 10.82, 84.014 * 365.25, 'uranusmap.jpg', 0, sun, PLANET_SCALE, DISTANCE_SCALE,
+uranus = Planet(50720, 2877000000, 10.82, 84.014 * 365.25, 'textures/uranusmap.jpg', 0, sun, PLANET_SCALE, DISTANCE_SCALE,
                 time_scale, REFRESH_RATE)
-neptune = Planet(49250, 4503000000, 15.67, 167.78 * 365.25, 'neptunemap.jpg', 0, sun, PLANET_SCALE, DISTANCE_SCALE,
+neptune = Planet(49250, 4503000000, 15.67, 167.78 * 365.25, 'textures/neptunemap.jpg', 0, sun, PLANET_SCALE, DISTANCE_SCALE,
                  time_scale, REFRESH_RATE)
 
 solar_system = {'sun': sun, 'mercury': mercury, 'venus': venus, 'earth': earth, 'moon': moon, 'mars': mars,

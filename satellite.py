@@ -2,7 +2,7 @@
 from vpython import sphere, vector, pi
 
 
-class Satellite():
+class Satellite:
     def __init__(self, diameter, distance_to_planet, rotation_period_in_hours, orbital_period_in_days, texture, mass,
                  planet):
         try:
@@ -12,7 +12,7 @@ class Satellite():
             self.orbit_speed = 2 * pi / (orbital_period_in_days * 3600 * 24)
             self.texture = texture
             self.mass = mass
-            self.planet = planet  # TODO: THIS IS TEMP SOLUTION, MAKE BETTER ONE
+            self.planet = planet
             self.obj = sphere(radius=self.radius * self.planet.planet_scale,
                               pos=vector(self.planet.obj.pos.x - self.distance_to_planet * self.planet.distance_scale -
                                          self.planet.radius * self.planet.planet_scale -
